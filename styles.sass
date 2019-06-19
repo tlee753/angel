@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa')
+
+$light-white: #F8F8FF
+$dark-white: #F4F4F4
+$light-silver: #C0C0C0
+$dark-silver: #868686
+$light-gold: #C0B283
+// $dark-gold: #B3A369
+$dark-gold: rgba(179, 163, 105, 0.8)
+$light-black: #373737
+$dark-black: #000000
+$light-blue: #75899E
+
+\:root
+    font-size: 12px
+
+::-webkit-scrollbar
+    display: none
+
+html
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+    
+body
+    background-image: url("./angel-13.png")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    font-size: 1.5rem
+    font-color: $light-black
+    font-family: "Comfortaa", sans-serif
+    margin: 0
+    padding: 0
+
+nav
+    position: relative
+    height: 100px
+    background-color: $dark-gold
+    color: $dark-white
+
+    .nav-content
+        padding: 20px
+
+        .nav-item
+            height: 60px
+            width: 60px
+            border-radius: 10px
+            margin-left: 20px
+            color: $dark-silver
+            line-height: 60px
+            text-align: center
+            font-size: 2rem
+
+        .title
+            font-size: 4rem
+            line-height: 60px
+            float: left
+
+        .icon
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+
+        .search
+            width: 240px
+            background-color: $dark-white
+            float: right
+
+        .new
+            background-color: $dark-white
+            float: right
+
+        .avatar
+            background-color: $dark-white
+            float: right
+
+.project
+    height: 400px
+    background-color: $dark-gold
+    opacity: 1
+    margin: 40px
+    border-radius: 20px
+    color: $light-black
+
+    .project-content
+        display: grid
+        grid-column-gap: 20px
+        grid-row-gap: 20px
+        padding: 20px
+        grid-template-columns: 5fr 35fr 30fr 10fr 10fr 10fr
+        grid-template-rows: 75px 75px 75px 75px
+        grid-template-areas: 'score-1 name photo stat-1 stat-3 stat-5' 'score-2 desc photo stat-1 stat-3 stat-5' 'score-3 desc photo stat-2 stat-4 stat-6' 'score-4 desc photo stat-2 stat-4 stat-6'
+
+        .column
+            background-color: $dark-white
+            opacity: 1
+            border-radius: 10px
+            padding: 10px
+            display: flex
+            overflow: auto
+
+        .score-1
+            grid-area: score-1
+
+        .score-2
+            grid-area: score-2
+
+        .score-3
+            grid-area: score-3
+
+        .score-4
+            grid-area: score-4
+
+        .name
+            grid-area: name
+            font-size: 2.5rem
+            line-height: 75px
+            padding: 0 0 0 10px
+
+        .desc
+            grid-area: desc
+
+        .photo
+            grid-area: photo
+
+        .stat-1
+            grid-area: stat-1
+
+        .stat-2
+            grid-area: stat-2
+
+        .stat-3
+            grid-area: stat-3
+
+        .stat-4
+            grid-area: stat-4
+
+        .stat-5
+            grid-area: stat-5
+
+        .stat-6
+            grid-area: stat-6
+
+footer
+    text-align: center
+    height: 400px
+    background-color: $dark-gold
+    color: $dark-white
+
+    .quote
+        font-size: 3rem
+        line-height: 200px
+
+    .copyright
+        line-height: 200px
+        color: $light-black
+        font-size: 1.5rem
+
+
+@media only screen and (max-width: 1000px)
+    body
+
+        .project
+
+            .project-content
+                grid-template-columns: 5fr 35fr 30fr
+                grid-template-areas: 'score-1 name photo' 'score-2 desc photo' 'score-3 desc photo' 'score-4 desc photo'
+
+                .stat-1
+                    display: none
+
+                .stat-2
+                    display: none
+
+                .stat-3
+                    display: none
+
+                .stat-4
+                    display: none
+
+                .stat-5
+                    display: none
+
+                .stat-6
+                    display: none
+
+        footer
+
+            .quote
+                font-size: 1rem
+
+@media only screen and (max-width: 800px)
+    body
+        
+        .project
+            margin: 20px
+    
+
+@media only screen and (max-width: 600px)
+    body
+
+        nav
+            
+            .nav-content
+
+                .search
+                    display: none
+
+                .new
+                    display: none
+
+        .project
+            height: 600px
+
+            .project-content
+                grid-template-columns: 5fr 35fr
+                grid-template-rows: 75px 75px 75px 75px 180px
+                grid-template-areas: 'score-1 name' 'score-2 desc' 'score-3 desc' 'score-4 desc' 'photo photo'
