@@ -1,0 +1,30 @@
+<svg
+  viewBox="0 0 320 320"
+  width="320"
+  height="320"
+  xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect
+       y="0"
+       x="0"
+       height="320"
+       width="320"
+       style="fill:none; fill-opacity:1; stroke:none; stroke-width:0; stroke-opacity:1" />
+    <path
+       d="m 40,40 c 20,40 50,50 80,80 30,30 0,160 0,160 c 0,0 -80,-40 -80,-240"
+       style="fill:silver; stroke:#B3A369; stroke-width:1px; stroke-linecap:butt; stroke-linejoin:miter; stroke-opacity:1" />
+    <path
+       d="m 280,40 c -20,40 -50,50 -80,80 -30,30 0,160 0,160 c 0,0 80,-40 80,-240"
+       style="fill:silver; stroke:#B3A369; stroke-width:1px; stroke-linecap:butt; stroke-linejoin:miter; stroke-opacity:1" />
+    <circle
+       r="30"
+       cy="80"
+       cx="160"
+       style="fill:#B3A369; fill-opacity:1; stroke:silver; stroke-width:1px; stroke-opacity:1" />
+    <circle
+       r="20"
+       cy="80"
+       cx="160"
+       style="fill:#e4e4e4; fill-opacity:1; stroke:silver; stroke-width:1px; stroke-opacity:1" />
+  </g>
+</svg>

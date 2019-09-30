@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa')
 
 $light-white: #F8F8FF
-$dark-white: #F4F4F4
+$dark-white: #e4e4e4
 $light-silver: #C0C0C0
 $dark-silver: #868686
 $light-gold: #C0B283
@@ -24,7 +24,8 @@ html
     height: 100%
     
 body
-    background-image: url("./angel-13.png")
+    background-color: $dark-white
+    background-image: url("./angel-14.svg")
     background-repeat: no-repeat
     background-position: center
     background-size: cover
@@ -40,8 +41,21 @@ nav
     height: 100px
     background-color: $dark-gold
     color: $dark-white
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
+
+    .icon
+        position: absolute
+        left: 50%
+        top: 50%
+        transform: translate(-50%, -50%)
+        align-self: center
 
     .nav-content
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: center
         padding: 20px
 
         .nav-item
@@ -57,26 +71,29 @@ nav
         .title
             font-size: 4rem
             line-height: 60px
-            float: left
+            align-self: flex-start
+            flex-basis: min-content
 
-        .icon
-            position: absolute
-            top: 50%
-            left: 50%
-            transform: translate(-50%, -50%)
+        .menu
+            display: flex
 
-        .search
-            width: 240px
-            background-color: $dark-white
-            float: right
+            .search
+                width: 240px
+                background-color: $dark-white
+                align-self: flex-end
+                flex-basis: content
 
-        .new
-            background-color: $dark-white
-            float: right
+            .new
+                background-color: $dark-white
+                float: right
+                align-self: flex-end
+                flex-basis: content
 
-        .avatar
-            background-color: $dark-white
-            float: right
+            .avatar
+                background-color: $dark-white
+                float: right
+                align-self: flex-end
+                flex-basis: min-content
 
 .project
     height: 400px
@@ -85,6 +102,8 @@ nav
     margin: 40px
     border-radius: 20px
     color: $light-black
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
 
     .project-content
         display: grid
@@ -102,54 +121,70 @@ nav
             padding: 10px
             display: flex
             overflow: auto
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+            align-items: center
 
         .score-1
             grid-area: score-1
+            background-image: url(./globe-solid.svg)
 
         .score-2
             grid-area: score-2
+            background-image: url(./arrow-up-solid.svg)
 
         .score-3
             grid-area: score-3
+            background-image: url(./share-alt-solid.svg)
 
         .score-4
             grid-area: score-4
+            background-image: url(./star-regular.svg)
 
         .name
             grid-area: name
             font-size: 2.5rem
-            line-height: 75px
             padding: 0 0 0 10px
 
         .desc
             grid-area: desc
+            align-items: flex-start
 
         .photo
             grid-area: photo
 
         .stat-1
             grid-area: stat-1
+            background-image: url(./wallet-solid.svg)
 
         .stat-2
             grid-area: stat-2
+            background-image: url(./hourglass-half-solid.svg)
 
         .stat-3
             grid-area: stat-3
+            background-image: url(./spinner-solid.svg)
 
         .stat-4
             grid-area: stat-4
+            background-image: url(./user-friends-solid.svg)
 
         .stat-5
             grid-area: stat-5
+            background-image: url(./map-marked-alt-solid.svg)
 
         .stat-6
             grid-area: stat-6
+            background-image: url(./calendar-alt-solid.svg)
 
 footer
     text-align: center
     height: 400px
     background-color: $dark-gold
     color: $dark-white
+    backdrop-filter: blur(5px)
+    -webkit-backdrop-filter: blur(5px)
 
     .quote
         font-size: 3rem
@@ -192,15 +227,9 @@ footer
 
             .quote
                 font-size: 1rem
-
-@media only screen and (max-width: 800px)
-    body
-        
-        .project
-            margin: 20px
     
 
-@media only screen and (max-width: 600px)
+@media only screen and (max-width: 1000px)
     body
 
         nav
@@ -215,6 +244,7 @@ footer
 
         .project
             height: 600px
+            margin: 20px
 
             .project-content
                 grid-template-columns: 5fr 35fr

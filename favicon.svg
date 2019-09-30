@@ -1,0 +1,9 @@
+<svg viewBox="40 40 240 240" width="60" height="60">
+    <g>
+        <rect y="-400" x="-400" height="1000" width="1000" style="fill:none;fill-opacity:1;stroke:none;stroke-width:0;stroke-opacity:1" />
+        <path d="m 40,40 c 20,40 50,50 80,80 30,30 0,160 0,160 c 0,0 -80,-40 -80,-240" style="fill:#E4E4E4;stroke:#B3A369;stroke-width:0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <path d="m 280,40 c -20,40 -50,50 -80,80 -30,30 0,160 0,160 c 0,0 80,-40 80,-240" style="fill:#E4E4E4;stroke:#B3A369;stroke-width:0px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+        <circle r="30" cy="80" cx="160" style="fill:#E4E4E4;fill-opacity:1;stroke:silver;stroke-width:0px;stroke-opacity:1" />
+        <!-- <circle r="20" cy="80" cx="160" style="fill:#B3A369;fill-opacity:1;stroke:silver;stroke-width:0px;stroke-opacity:1" /> -->
+    </g>
+</svg>
