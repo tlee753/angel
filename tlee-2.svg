@@ -1,0 +1,94 @@
+<svg
+    viewBox="0 0 1000 1000"
+    width="1000"
+    height="1000"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <g>
+        <rect
+            y="0"
+            x="0"
+            height="1000"
+            width="1000"
+            style="fill:ghostwhite; fill-opacity:1; stroke:none;"
+        />
+        
+
+        <circle
+            r="400"
+            cy="500"
+            cx="500"
+            style="fill:transparent; fill-opacity:1; stroke:gray; stroke-width:32px; stroke-opacity:1"
+        />
+
+        <circle
+            r="310"
+            cy="500"
+            cx="500"
+            style="fill:transparent; fill-opacity:1; stroke:transparent; stroke-width:40px; stroke-opacity:1"
+        />
+
+        <circle
+            r="20"
+            cx="440"
+            cy="200"
+            style="fill:gray;"
+        />
+        <circle
+            r="20"
+            cx="440"
+            cy="800"
+            style="fill:gray;"
+        />
+        <line
+            x1="440"
+            y1="200"
+            x2="440"
+            y2="800"
+            style="fill:gray; stroke-width:40px; stroke-opacity:1; stroke:gray;"
+        />
+
+        <circle
+            r="20"
+            cx="560"
+            cy="200"
+            style="fill:gray;"
+        />
+        <circle
+            r="20"
+            cx="560"
+            cy="800"
+            style="fill:gray;"
+        />
+        <line
+            x1="560"
+            y1="200"
+            x2="560"
+            y2="800"
+            style="fill:gray; stroke-width:40px; stroke-opacity:1; stroke:gray;"
+        />
+
+
+        <circle
+            r="20"
+            cx="220"
+            cy="360"
+            style="fill:gray;"
+        />
+        <path
+            d="m 440,200 c -100,0 -200,100 -220,160"
+            style="stroke:gray; stroke-width:40px; fill:transparent;"
+        />
+
+        <circle
+            r="20"
+            cx="780"
+            cy="640"
+            style="fill:gray;"
+        />
+        <path
+            d="m 560,800 c 100,0 200,-100 220,-160"
+            style="stroke:gray; stroke-width:40px; fill:transparent;"
+        />
+    </g>
+</svg>
